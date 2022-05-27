@@ -1,0 +1,177 @@
+/*Annule toute les propriétés de base de la page*/
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Akshar', sans-serif;
+}
+
+/*Taille de la première page et motifs de fond*/
+#pub{
+    height: 100vh;
+    background-image:url(img/fond/motifondb.jpg);
+    background-size: cover;
+}
+
+/*Propriétés de l'entête*/
+#pub header{
+    height: 15vh;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/*Bouton 'EMC Projet'*/
+#pub header a{
+    font-size: 1.8em;
+    color:black;
+}
+
+/*Changement de couleur du bouton au passage de la souris*/
+#pub header a:hover{
+    transition: 0.25s;
+    color:rgb(186, 169, 72);
+}
+
+/*Taille du titre 'Trousse pour garçon'*/
+#pub header h1{
+    font-size: 1.8em;
+}
+
+/*Partie du contenu de la pub/page*/
+#pub .container{
+    height: 85vh;
+    width: 100%;
+    position: relative;
+}
+
+/*Conteneur avec l'image de la trousse, le texte est caché pour le faire apparaître au passage de la souris*/
+#pub .container #image{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top:20px;
+    left:23%;
+    background-image: url(/img/trousse/Trousse.jpg);
+    background-size: cover;
+    background-position: center;
+    border:5px solid black;
+    content-visibility:hidden;
+}
+
+/*Titre 'Parfait pour les garçons' qui apparaît au passage de la souris*/
+#pub .container #image h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.8em;
+    color:white;
+}
+
+/*Changement de l'image et apparition du titre au passage de la souris*/
+#pub .container #image:hover{
+    transition: 0.25s;
+    max-width: 600px;
+    background-image: url(/img/trousse/ado.jpg);
+    background-size: cover;
+    content-visibility: visible;
+}
+
+/*Emplacement div bouton-couleur*/
+#pub .container #bouton-couleur{
+    position:absolute;
+    bottom:6%;
+    left: 26%;
+    height:70px;
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/*Propriétés bouton-couleur*/
+#pub .container #bouton-couleur a{
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 100%;
+    margin: 60px;
+}
+
+/*Couleur rouge bleu et vert des boutons*/
+#pub .container #bouton-couleur #rouge{
+    background-color:#ff000a;
+}
+
+#pub .container #bouton-couleur #bleu{
+    background-color:#0e4bef;
+}
+
+#pub .container #bouton-couleur #vert{
+    background-color:#49b675;
+}
+
+/*Changement du bord noir en gris au passage de la souris*/
+#pub .container #bouton-couleur a:hover{
+    border: 3px solid grey;
+}
+
+#description{
+    position: absolute;
+    right: 30px;
+    top:25%;
+    height: 50%;
+    width: 25%;
+    padding: 5px;
+}
+
+#description #titre_description{
+    margin-bottom: 15px;
+}
+
+#description #contenu_description{
+    margin-left: 25px;
+}
+
+#description #contenu_description li{
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+/*Propriétés de la seconde page du site, avec le slogan et le footer*/
+#slogan-footer{
+    height:60vh;
+    width: 100%;
+    background-image: url(/img/fond/fondn.png);
+    background-size: cover;
+    color:white;
+}
+
+/*Slogan qui est centré au milieu de la partie attribuée au slogan*/
+#slogan-footer #container{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Propriétés du texte/slogan*/
+#slogan-footer #slogan h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+/*taille du footer et padding latéral*/
+#slogan-footer footer {
+    height: 30vh;
+    padding:0 20px;
+    
+}
+
+/*Positionnement de noms des réalisateurs*/
+#slogan-footer footer #créateur {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
